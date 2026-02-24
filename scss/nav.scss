@@ -1,0 +1,107 @@
+nav {
+  width: $nav-content-max-width;
+  height: $nav-height;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+  border-bottom: 4px solid white;
+}
+
+nav h5 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+nav .link-holder {
+  display: flex;
+  gap: 40px;
+}
+
+nav .link-holder a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-left: 1px solid #79addc;
+  padding-left: 40px;
+}
+nav .link-holder a:first-child {
+  border-left: none;
+}
+
+.about-page-body nav,
+.tours nav,
+.special nav,
+.blog nav,
+.contact nav,
+.tour-detail nav {
+  border-bottom-color: black;
+}
+
+.about-page-body nav .link-holder a,
+.tours nav .link-holder a,
+.special nav .link-holder a,
+.blog nav .link-holder a,
+.contact nav .link-holder a,
+.tour-detail nav .link-holder a {
+  color: black;
+}
+
+.about-page-body nav h5,
+.tours nav h5,
+.special nav h5,
+.blog nav h5,
+.contact nav h5,
+.tour-detail nav h5 {
+  color: black;
+  border: 2px solid #000000;
+}
+
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0 20px;
+  }
+
+  nav .link-holder {
+    gap: 20px;
+  }
+
+  nav .link-holder a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  nav .link-holder {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  nav .link-holder a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+footer {
+  height: 100px;
+  background-color: #79addc;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 150px;
+  color: white; // 👈 makes all text/icons white automatically
+}
+
+footer h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+footer h5 {
+  font-size: 15px;
+  margin: 0;
+}
+
+footer .icon-holder {
+  display: flex;
+  gap: 20px;
+}
+
+footer .icon-holder i {
+  font-size: 24px;
+  color: white;
+}
+
+footer h4 {
+  color: white;
+  font-size: 25px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+}
+footer h5 {
+  color: white;
+  font-size: 15px;
+  padding-left: 50px;
+}
+
+@font-face {
+  font-family: "nova-thin";
+  src: url("../images/Travel-fly/Proxima-Nova-Thin.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nova-condensed";
+  src: url("../images/Travel-fly/ProximaNovaScOsfExtraCondensed.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h4,
+h5,
+h6,
+a,
+label,
+textarea,
+input,
+button,
+p {
+  font-family: "nova-thin", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+span {
+  font-family: "nova-condensed", Arial, sans-serif;
+}

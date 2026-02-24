@@ -1,0 +1,134 @@
+.tours-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tours-hero {
+  height: 250px;
+  background: url("../images/Travel-fly/images/tour/tours-header.jpg")
+    center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: italic;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.tours-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tours-hero h1 {
+  position: relative;
+  font-size: 60px;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.tour-card {
+  height: 354px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.tour-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-content {
+  position: relative;
+  text-align: center;
+}
+
+.tour-content h2 {
+  font-style: italic;
+  //-bottom: 100px;
+  font-size: 60px;
+}
+
+.tour-content p {
+  margin-bottom: 90px;
+}
+
+.learn-btn {
+  border-radius: 20px;
+  background: #79addc;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 18px;
+}
+
+.israel {
+  background-image: url("../images/Travel-fly/images/tour/tour-01.jpg");
+}
+.usa {
+  background-image: url("../images/Travel-fly/images/tour/tour-02.jpg");
+}
+.australia {
+  background-image: url("../images/Travel-fly/images/tour/tour-03.jpg");
+}
+.nz {
+  background-image: url("../images/Travel-fly/images/tour/tour-04.jpg");
+}
+.france {
+  background-image: url("../images/Travel-fly/images/tour/tour-05.jpg");
+}
+.egypt {
+  background-image: url("../images/Travel-fly/images/tour/tour-06.jpg");
+}
+.japan {
+  background-image: url("../images/Travel-fly/images/tour/tour-07.jpg");
+}
+.canada {
+  background-image: url("../images/Travel-fly/images/tour/tour-08.jpg");
+}
+.uae {
+  background-image: url("../images/Travel-fly/images/tour/tour-09.jpg");
+}
+
+@media (max-width: 900px) {
+  .tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tour-content h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tours-hero h1 {
+    font-size: 36px;
+  }
+
+  .tour-content h2 {
+    font-size: 32px;
+  }
+}

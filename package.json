@@ -1,0 +1,36 @@
+{
+  "name": "homework-three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "detect-libc": "^2.1.2",
+    "immutable": "^5.1.4",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "node-addon-api": "^7.1.1",
+    "picomatch": "^4.0.3",
+    "readdirp": "^4.1.2",
+    "source-map-js": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadamson1220/homework-three.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kadamson1220/homework-three/issues"
+  },
+  "homepage": "https://github.com/kadamson1220/homework-three#readme"
+}

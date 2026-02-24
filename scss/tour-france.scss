@@ -1,0 +1,135 @@
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-france {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-05.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-france::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-france h1,
+.tour-hero-france p {
+  position: relative;
+}
+
+.tour-hero-france p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+.tour-hero-france h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-france {
+    height: 350px;
+    padding-left: 20px;
+  }
+
+  .tour-hero-france h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+
+  .tour-hero-france p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .day h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-hero-france {
+    height: 300px;
+  }
+
+  .tour-hero-france h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .tour-hero-france p {
+    font-size: 16px;
+  }
+
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}

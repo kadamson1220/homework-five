@@ -1,0 +1,2046 @@
+.promo-image-box {
+  width: 236px;
+  height: 304px;
+  background-color: darkviolet;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+footer {
+  height: 100px;
+  background-color: #79addc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  color: white;
+}
+
+footer h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+footer h5 {
+  font-size: 15px;
+  margin: 0;
+}
+
+footer .icon-holder {
+  display: flex;
+  gap: 20px;
+}
+
+footer .icon-holder i {
+  font-size: 24px;
+  color: white;
+}
+
+footer h4 {
+  color: white;
+  font-size: 25px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+}
+
+footer h5 {
+  color: white;
+  font-size: 15px;
+  padding-left: 50px;
+}
+
+@font-face {
+  font-family: "nova-thin";
+  src: url("../images/Travel-fly/Proxima-Nova-Thin.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nova-condensed";
+  src: url("../images/Travel-fly/ProximaNovaScOsfExtraCondensed.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+h4,
+h5,
+h6,
+a,
+label,
+textarea,
+input,
+button,
+p {
+  font-family: "nova-thin", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+span {
+  font-family: "nova-condensed", Arial, sans-serif;
+}
+
+nav {
+  width: 980px;
+  height: 92px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 4px solid white;
+}
+
+nav h5 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+nav .link-holder {
+  display: flex;
+  gap: 40px;
+}
+
+nav .link-holder a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-left: 1px solid #79addc;
+  padding-left: 40px;
+}
+
+nav .link-holder a:first-child {
+  border-left: none;
+}
+
+.about-page-body nav,
+.tours nav,
+.special nav,
+.blog nav,
+.contact nav,
+.tour-detail nav {
+  border-bottom-color: black;
+}
+
+.about-page-body nav .link-holder a,
+.tours nav .link-holder a,
+.special nav .link-holder a,
+.blog nav .link-holder a,
+.contact nav .link-holder a,
+.tour-detail nav .link-holder a {
+  color: black;
+}
+
+.about-page-body nav h5,
+.tours nav h5,
+.special nav h5,
+.blog nav h5,
+.contact nav h5,
+.tour-detail nav h5 {
+  color: black;
+  border: 2px solid #000000;
+}
+
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+    left: 0;
+    transform: none;
+    padding: 0 20px;
+  }
+  nav .link-holder {
+    gap: 20px;
+  }
+  nav .link-holder a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+  nav .link-holder {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  nav .link-holder a {
+    font-size: 14px;
+  }
+}
+.home .hero {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Travel-fly/images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.home .hero .callout {
+  text-align: center;
+  max-width: 400px;
+  padding: 0 20px;
+}
+.home .hero .callout h1 {
+  font-size: 56px;
+  margin-bottom: 46px;
+  margin-top: 106px;
+}
+.home .hero .callout p {
+  font-size: 18px;
+}
+.home .hero .callout button {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 11px 20px;
+  background-color: #79addc;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+.home .home-content {
+  max-width: 818px;
+  margin: -110px auto 0 auto;
+  padding: 0 20px;
+}
+.home .home-content .promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.home .home-content .promo-image-box {
+  width: 236px;
+  height: 304px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+.home .home-content .tour-one {
+  background-image: url("../images/Travel-fly/images/tour/tour-01.jpg");
+}
+.home .home-content .tour-two {
+  background-image: url("../images/Travel-fly/images/tour/tour-02.jpg");
+}
+.home .home-content .tour-three {
+  background-image: url("../images/Travel-fly/images/tour/tour-03.jpg");
+}
+.home .home-content .promo-image-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.home .home-content .promo-content {
+  position: relative;
+  text-align: center;
+}
+.home .home-content .promo-content h2 {
+  font-size: 62px;
+  margin-bottom: 40px;
+}
+.home .home-content .promo-content h3 {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.home .home-content .promo-content button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #79addc;
+  color: white;
+}
+.home .home-content .booking-form-holder {
+  margin-top: 30px;
+  padding-bottom: 200px;
+}
+.home .home-content .booking-form-holder h1 {
+  margin-bottom: 26px;
+  color: black;
+  font-size: 62px;
+}
+.home .home-content .booking-form-holder .two-col-txt-input {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.home .home-content .booking-form-holder .two-col-txt-input input {
+  width: 48%;
+  height: 50px;
+  padding: 0 15px;
+  border: 2px solid #79addc;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+.home .home-content .booking-form-holder .date-input-holder {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.home .home-content .booking-form-holder .date-input-holder input {
+  height: 50px;
+  padding: 0 15px;
+  border: 2px solid #79addc;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+.home .home-content .booking-form-holder .selection-holder {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.home .home-content .booking-form-holder .selection-holder label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.home .home-content .booking-form-holder .selection-holder select {
+  height: 50px;
+  padding: 0 10px;
+  border: 2px solid #79addc;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+.home .home-content .booking-form-holder textarea {
+  width: 100%;
+  height: 192px;
+  margin-top: 30px;
+  padding: 15px;
+  border: 2px solid #79addc;
+  font-size: 14px;
+  resize: none;
+}
+.home .home-content .booking-form-holder .submit-btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 37px;
+  border: none;
+  border-radius: 40px;
+  background-color: #79addc;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .home .promo {
+    justify-content: center;
+  }
+  .home .promo-image-box {
+    width: 100%;
+    max-width: 350px;
+  }
+  .home .two-col-txt-input input {
+    width: 100%;
+  }
+  .home .date-input-holder {
+    grid-template-columns: 1fr;
+  }
+  .home .booking-form-holder h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 500px) {
+  .home .hero {
+    height: 400px;
+  }
+  .home .callout h1 {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+  .home .promo-content h2 {
+    font-size: 36px;
+  }
+  .home .booking-form-holder h1 {
+    font-size: 32px;
+  }
+}
+.about-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-section,
+.quotes-section {
+  margin-bottom: 100px;
+}
+
+.about-section h1,
+.quotes-section h1 {
+  font-size: 48px;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+
+.underline {
+  width: 200px;
+  height: 2px;
+  background: black;
+  margin: 20px 0 40px 0;
+}
+
+.about-section p {
+  max-width: 800px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.quote img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.quote-text p {
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.quote-text span {
+  display: block;
+  margin-top: 20px;
+  color: #79addc;
+  font-style: italic;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .about-section h1,
+  .quotes-section h1 {
+    font-size: 36px;
+  }
+  .quote {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .quote img {
+    width: 100%;
+    height: auto;
+  }
+  .quote-text p {
+    max-width: 100%;
+  }
+  .quote-text span {
+    text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  .about-section h1,
+  .quotes-section h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .underline {
+    width: 120px;
+  }
+}
+.tours-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tours-hero {
+  height: 250px;
+  background: url("../images/Travel-fly/images/tour/tours-header.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: italic;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.tours-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tours-hero h1 {
+  position: relative;
+  font-size: 60px;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.tour-card {
+  height: 354px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.tour-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-content {
+  position: relative;
+  text-align: center;
+}
+
+.tour-content h2 {
+  font-style: italic;
+  font-size: 60px;
+}
+
+.tour-content p {
+  margin-bottom: 90px;
+}
+
+.learn-btn {
+  border-radius: 20px;
+  background: #79addc;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 18px;
+}
+
+.israel {
+  background-image: url("../images/Travel-fly/images/tour/tour-01.jpg");
+}
+
+.usa {
+  background-image: url("../images/Travel-fly/images/tour/tour-02.jpg");
+}
+
+.australia {
+  background-image: url("../images/Travel-fly/images/tour/tour-03.jpg");
+}
+
+.nz {
+  background-image: url("../images/Travel-fly/images/tour/tour-04.jpg");
+}
+
+.france {
+  background-image: url("../images/Travel-fly/images/tour/tour-05.jpg");
+}
+
+.egypt {
+  background-image: url("../images/Travel-fly/images/tour/tour-06.jpg");
+}
+
+.japan {
+  background-image: url("../images/Travel-fly/images/tour/tour-07.jpg");
+}
+
+.canada {
+  background-image: url("../images/Travel-fly/images/tour/tour-08.jpg");
+}
+
+.uae {
+  background-image: url("../images/Travel-fly/images/tour/tour-09.jpg");
+}
+
+@media (max-width: 900px) {
+  .tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tour-content h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .tours-grid {
+    grid-template-columns: 1fr;
+  }
+  .tours-hero h1 {
+    font-size: 36px;
+  }
+  .tour-content h2 {
+    font-size: 32px;
+  }
+}
+.contact-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-page h1 {
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.contact-page .underline {
+  width: 150px;
+  height: 2px;
+  background: black;
+  margin-bottom: 60px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contact-left img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  border: none;
+  background: #eee;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-right textarea {
+  height: 150px;
+  resize: none;
+}
+
+.send-btn {
+  width: 160px;
+  padding: 10px;
+  background: #79addc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-left img {
+    width: 100%;
+    height: auto;
+  }
+  .send-btn {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-page h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .contact-page .underline {
+    width: 100px;
+  }
+  .send-btn {
+    width: 100%;
+  }
+}
+.special-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding: 150px 20px 120px 20px;
+}
+
+.special-page h1 {
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.special-page .underline {
+  width: 200px;
+  height: 2px;
+  background: black;
+  margin-bottom: 60px;
+}
+
+.offer {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 80px;
+  align-items: flex-start;
+}
+
+.offer img {
+  width: 200px;
+  height: 287px;
+  object-fit: cover;
+}
+
+.offer-content h2 {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 33px;
+  letter-spacing: 4px;
+}
+
+.offer-content h2 span {
+  color: #ff7d38;
+  font-size: 14px;
+  margin-left: 70px;
+}
+
+.offer-content p {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 290px;
+  margin-bottom: 60px;
+}
+
+.learn-btn {
+  padding: 8px 18px;
+  background: #79addc;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .offer {
+    flex-direction: column;
+  }
+  .offer img {
+    width: 100%;
+    height: auto;
+  }
+  .offer-content p {
+    max-width: 100%;
+  }
+  .offer-content h2 span {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .special-page h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .special-page .underline {
+    width: 120px;
+  }
+  .offer-content h2 {
+    font-size: 24px;
+  }
+}
+.blog-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blog-page h1 {
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.blog-page .underline {
+  width: 120px;
+  height: 2px;
+  background: black;
+  margin-bottom: 60px;
+}
+
+.blog-post {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 80px;
+  align-items: flex-start;
+}
+
+.date-box {
+  background: #79addc;
+  color: white;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date-box .day {
+  font-weight: bold;
+}
+
+.date-box .month {
+  font-size: 12px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.post-content h3 {
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #79addc;
+  font-weight: bold;
+  max-width: 380px;
+}
+
+@media (max-width: 900px) {
+  .blog-post {
+    flex-direction: column;
+  }
+  .date-box {
+    width: 70px;
+    height: 70px;
+  }
+  .post-content p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .blog-page h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .blog-page .underline {
+    width: 80px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-isreal {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-01.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-isreal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-isreal h1,
+.tour-hero-isreal p {
+  position: relative;
+}
+
+.tour-hero-isreal p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-isreal h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-isreal {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-isreal h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-isreal p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-isreal {
+    height: 300px;
+  }
+  .tour-hero-isreal h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-isreal p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-aus {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-03.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-aus::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-aus h1,
+.tour-hero-aus p {
+  position: relative;
+}
+
+.tour-hero-aus p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-aus h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-aus {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-aus h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-aus p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-aus {
+    height: 300px;
+  }
+  .tour-hero h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-canada {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-08.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-canada::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-canada h1,
+.tour-hero-canada p {
+  position: relative;
+}
+
+.tour-hero-canada p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-canada h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-canada {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-canada h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-canada p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-canada {
+    height: 300px;
+  }
+  .tour-hero-canada h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-canada p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-egypt {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-06.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-egypto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-egypt h1,
+.tour-hero-egypt p {
+  position: relative;
+}
+
+.tour-hero-egypt p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-egypt h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-egypt {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-egypt h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-egypt p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-egypt {
+    height: 300px;
+  }
+  .tour-hero-egypt h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-egypt p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-france {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-05.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-france::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-france h1,
+.tour-hero-france p {
+  position: relative;
+}
+
+.tour-hero-france p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-france h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-france {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-france h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-france p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-france {
+    height: 300px;
+  }
+  .tour-hero-france h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-france p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-japan {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-07.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-japan::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-japan h1,
+.tour-hero-japan p {
+  position: relative;
+}
+
+.tour-hero-japan p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-japan h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-isreal {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-isreal h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-isreal p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-isreal {
+    height: 300px;
+  }
+  .tour-hero-isreal h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-isreal p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-nz {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-04.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-nz::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-nz h1,
+.tour-hero-nz p {
+  position: relative;
+}
+
+.tour-hero-nz p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-nz h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-nz {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-nz h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-nz p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-nz {
+    height: 300px;
+  }
+  .tour-hero-nz h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-nz p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-uae {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-09.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-uae::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-uae h1,
+.tour-hero-uae p {
+  position: relative;
+}
+
+.tour-hero-uae p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-uae h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-uae {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-uae h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-uae p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-uae {
+    height: 300px;
+  }
+  .tour-hero-uae h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-uae p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}
+.tour-detail-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+}
+
+.tour-hero-usa {
+  height: 413px;
+  background: url("../images/Travel-fly/images/tour/tour-02.jpg") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: white;
+  position: relative;
+}
+
+.tour-hero-usa::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.tour-hero-usa h1,
+.tour-hero-usa p {
+  position: relative;
+}
+
+.tour-hero-usa p {
+  font-size: 22px;
+  margin-left: 370px;
+  margin-top: 80px;
+}
+
+.tour-hero-usa h1 {
+  font-size: 55px;
+  font-style: italic;
+  font-size: 70px;
+  margin-bottom: 180px;
+}
+
+.tour-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.tour-gallery img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+}
+
+.day {
+  margin-bottom: 60px;
+}
+
+.day h2 {
+  letter-spacing: 7px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.day p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.tour-book {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.book-btn {
+  padding: 10px 30px;
+  background: #79addc;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .tour-hero-usa {
+    height: 350px;
+    padding-left: 20px;
+  }
+  .tour-hero-usa h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  .tour-hero-usa p {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .tour-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tour-gallery {
+    grid-template-columns: 1fr;
+  }
+  .tour-hero-usa {
+    height: 300px;
+  }
+  .tour-hero-usa h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .tour-hero-usa p {
+    font-size: 16px;
+  }
+  .day h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+}

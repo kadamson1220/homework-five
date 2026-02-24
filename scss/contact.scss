@@ -1,0 +1,98 @@
+.contact-page {
+  padding-top: 150px;
+  max-width: 980px;
+  margin: 0 auto 120px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-page h1 {
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.contact-page .underline {
+  width: 150px;
+  height: 2px;
+  background: black;
+  margin-bottom: 60px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contact-left img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  border: none;
+  background: #eee;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-right textarea {
+  height: 150px;
+  resize: none;
+}
+
+.send-btn {
+  width: 160px;
+  padding: 10px;
+  background: #79addc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .send-btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-page h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .contact-page .underline {
+    width: 100px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+}
